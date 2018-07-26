@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "UDownloader",
+  "version": "1.0",
+
+  "description": "Downloads Images from Social networking sites and youtube",
+
+  "icons": {
+    "48": "icons/main.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+
+}
